@@ -62,6 +62,13 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
+fos_user:
+    firewall_name: main
+    user_class: AppBundle\Entity\User
+    from_email:
+        address: app@watchfloor.richjanitor.com
+        sender_name: Site Admin
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"
