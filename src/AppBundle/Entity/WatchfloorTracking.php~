@@ -35,11 +35,18 @@ class WatchfloorTracking
      * @ORM\Column(name="viewed", type="boolean", options={"default" : 0}, nullable=true)
      */
     private $viewed=0;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="`mandrill`", type="string", length=255, nullable=true)
+     */
+    private $mandrill;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="created", type="datetime")
+     * @ORM\Column(name="created", type="datetime", options={"default": 0})
      */
     private $created;
     
@@ -106,5 +113,29 @@ class WatchfloorTracking
     public function getCreated()
     {
         return $this->created;
+    }
+
+    /**
+     * Set viewed
+     *
+     * @param boolean $viewed
+     *
+     * @return WatchfloorTracking
+     */
+    public function setViewed($viewed)
+    {
+        $this->viewed = $viewed;
+
+        return $this;
+    }
+
+    /**
+     * Get viewed
+     *
+     * @return boolean
+     */
+    public function getViewed()
+    {
+        return $this->viewed;
     }
 }

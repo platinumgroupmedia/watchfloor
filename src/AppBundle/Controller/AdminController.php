@@ -64,6 +64,8 @@ class AdminController extends Controller
      */
     public function invoiceViewAction( Request $request, WatchfloorTracking $wft, $page = 1 )
     {
+	    $user = $this->getUser();
+	    
 	    $em = $this->getDoctrine()->getManager();
 	    
 	    
@@ -84,7 +86,7 @@ class AdminController extends Controller
 		    $startDate = $start->getCreated();
 		    $endDate = $end->getCreated();
 	    }
-	    if( !$end->getViewed() )
+	    if( !$end->getViewed() && $user->getUsername() != 'platinum' )
 	    {
 		    $em->persist( $end );
 		    $end->setViewed(1);

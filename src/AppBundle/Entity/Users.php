@@ -58,7 +58,7 @@ class Users
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="created", type="datetime")
+     * @ORM\Column(name="created", type="datetime", options={"default": 0})
      */
     private $created;
 

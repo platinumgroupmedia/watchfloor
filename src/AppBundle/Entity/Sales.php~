@@ -331,9 +331,9 @@ class Sales
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="entry_date", type="datetime", nullable=false)
+     * @ORM\Column(name="entry_date", type="datetime", nullable=false, options={"default": 0})
      */
-    private $entryDate = 'CURRENT_TIMESTAMP';
+    private $entryDate;
 
     /**
      * @var integer

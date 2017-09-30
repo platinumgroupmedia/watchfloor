@@ -2,3 +2,47 @@
 [26-Feb-2017 00:48:57 UTC] PHP Fatal error:  Class 'Knp\Bundle\PaginatorBundle\KnpPaginatorBundle' not found in /home/richjani/dev.watchfloor/app/AppKernel.php on line 18
 [07-Apr-2017 23:42:37 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/richjani/dev.watchfloor/src/AppBundle/Controller/AdminController.php on line 49
 [08-Apr-2017 20:41:01 UTC] PHP Fatal error:  Call to a member function getLastId() on array in /home/richjani/dev.watchfloor/src/AppBundle/Controller/AdminController.php on line 74
+[30-Sep-2017 08:36:28 UTC] PHP Fatal error:  Class 'Slot\MandrillBundle\SlotMandrillBundle' not found in /home/richjani/dev.watchfloor/app/AppKernel.php on line 20
+[30-Sep-2017 08:59:10 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"Testing email","to":[{"email":"wade@goodfellaz.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[30-Sep-2017 08:59:16 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1225
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sat, 30 Sep 2017 08:59:16 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[30-Sep-2017 08:59:16 UTC] Completed in 6,121.94ms
+[30-Sep-2017 08:59:16 UTC] Got response: [{"email":"wade@goodfellaz.com","status":"sent","_id":"dd954609b0154a2f9c51547f1ada70e6","reject_reason":null}]

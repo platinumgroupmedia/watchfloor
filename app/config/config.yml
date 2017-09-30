@@ -69,3 +69,19 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+    
+slot_mandrill:
+    api_key: '7UrhK4zatIkYmXNxMknriA'
+    disable_delivery: false # useful for dev/test environment. Default value is 'false'
+    # debug: passed to \Mandrill causing it to output curl requests. Useful to see output
+    # from CLI script. Default value is 'false'
+    debug: true
+    default:
+        sender: richjani@secretoffer.org
+        sender_name: 'Rich Janitor Notifications' # Optionally define a sender name (from name)
+    proxy:
+        use: false # when you are behing a proxy. Default value is 'false'
+        host: example.com
+        port: 80
+        user: john
+        password: doe123
