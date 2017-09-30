@@ -1,0 +1,134 @@
+{% trans_default_domain 'AppBundle' %}
+
+{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit form-horizontal', 'role': 'form' } }) }}
+<h3 style="margin:0;">Merchant Information</h3>
+<hr />
+	    	
+	    	<div class="form-group">
+	    		{{ form_label(form.lastname, 'form.lastname'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.lastname, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.lastname) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.firstname, 'form.firstname'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.firstname, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.firstname) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.addr1, 'form.addr1'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.addr1, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.addr1) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.addr2, 'form.addr2'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.addr2, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.addr2) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.state, 'form.state'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.state, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.state) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.zip, 'form.zip'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.zip, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.zip) }}
+		    		</div>
+			</div>
+			
+			<div class="form-group">
+	    		{{ form_label(form.country, 'form.country'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.country, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.country) }}
+		    		</div>
+			</div>
+			
+	<br /><br />
+    <h3>Account</h3>
+    <hr />
+			
+	    	<div class="form-group">
+	    		{{ form_label(form.username, 'form.username'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.username, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.username) }}
+		    		</div>
+			</div>
+
+	    	<div class="form-group">
+	    		{{ form_label(form.email, 'form.email'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+					<div class="col-xs-9">
+	    			{{ form_widget(form.email, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.email) }}
+	    			</div>
+	    	</div>
+
+	    	<div class="form-group">
+	    		{{ form_label(form.paypal, 'form.paypal'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+	    			<div class="col-xs-9">
+	    			{{ form_widget(form.paypal, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.paypal) }}
+			    	</div>
+		   	</div>
+		   	
+	<br /><br />
+    <h3>Paypal Web Payment Pro Settings</h3>
+    <hr />
+    
+    		<div class="form-group">
+		        {{ form_label(form.use_paypal_pro, 'form.use_paypal_pro'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+		        <div class="col-xs-9">
+		            <p style="margin-top:10px;">{{ form_widget(form.use_paypal_pro, { 'attr': {'data-toggle': 'toggle', 'data-size': 'mini' } }) }}</p>
+		        </div>
+		    </div>
+		    
+		    <div class="form-group">
+	    		{{ form_label(form.paypal_pro_user, 'form.paypal_pro_user'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+	    			<div class="col-xs-9">
+	    			{{ form_widget(form.paypal_pro_user, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.paypal_pro_user) }}
+			    	</div>
+		   	</div>
+		   	
+		   	<div class="form-group">
+	    		{{ form_label(form.paypal_pro_pass, 'form.paypal_pro_pass'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+	    			<div class="col-xs-9">
+	    			{{ form_widget(form.paypal_pro_pass, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.paypal_pro_pass) }}
+			    	</div>
+		   	</div>
+		   	
+		   	<div class="form-group">
+	    		{{ form_label(form.paypal_pro_sig, 'form.paypal_pro_sig'|trans ~ ':', {'label_attr': {'class': 'control-label col-xs-3 text-right'}}) }}
+	    			<div class="col-xs-9">
+	    			{{ form_widget(form.paypal_pro_sig, { 'attr': {'class': 'text-custom form-control' } }) }}
+	    			{{ form_errors(form.paypal_pro_sig) }}
+			    	</div>
+		   	</div>
+    
+		    {{ form_rest(form) }}
+	    </div>
+	    <div>
+	        <div class="text-center" style="margin-top:40px;">
+		        <button type="submit" class="btn btn-primary">{{ 'profile.edit.submit'|trans }}</button>
+		    </div>
+	    </div>
+	{{ form_end(form) }}
+</div>

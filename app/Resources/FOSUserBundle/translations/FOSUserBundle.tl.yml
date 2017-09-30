@@ -1,0 +1,88 @@
+group:
+    edit:
+        submit: 'update grupo'
+    show:
+        name: 'Pangalan ng grupo'
+    new:
+        submit: 'Gumawa ng grupo'
+    flash:
+        updated: 'Ang grupo ay nai-update'
+        created: 'Ang grupo ay nagawa na'
+        deleted: 'Ang grupo na ito ay tinanggal na'
+
+security:
+    login:
+        username: Username
+        password: Password
+        remember_me: 'Tandaan mo ako'
+        submit: 'mag-log in'
+
+profile:
+    show:
+        username: Username
+        email: Email
+    edit:
+        submit: Update
+    flash:
+        updated: 'profile ay nai-update'
+
+change_password:
+    submit: 'Palitan ANG password'
+    flash:
+        success: 'Ang password ay nabago'
+
+registration:
+    check_email: 'Ang isang email ay ipinadala sa %email%. Ito ay naglalaman ng isang activation link ay dapat mong i-click upang i-activate ang iyong account.'
+    confirmed: 'Pagbati %username%, ang iyong account ay ngayon ay ginawang aktibo.'
+    back: 'Bumalik sa pahina ng Pinagmulang.'
+    submit: Magrehistro
+    flash:
+        user_created: 'user ay matagumpay na nilikha'
+    email:
+        subject: 'maligayang pagdating %username%!'
+        message: |
+            Kumusta %username%!
+
+            Upang tapusin ang pag-activate ang iyong account - mangyaring bisitahin %confirmationUrl%
+
+            Regards,
+            The Payzeno Team.
+
+resetting:
+    password_already_requested: 'Ang password para sa user na ito ay nai-hiniling sa loob ng huling 24 na oras.'
+    check_email: 'Ang isang email ay ipinadala sa %email%. Ito ay naglalaman ng isang link ay dapat mong i-click upang i-reset ang iyong password.'
+    request:
+        invalid_username: 'Ang username o email address "%username%" ay hindi umiiral.'
+        username: 'Username o email address'
+        submit: 'I-reset ang password'
+    reset:
+        submit: 'Palitan ANG password'
+    flash:
+        success: 'Password ay matagumpay na i-reset'
+    email:
+        subject: 'I-reset ang Password'
+        message: |
+            Kumusta %username%!
+
+            Upang i-reset ang iyong password - mangyaring bisitahin %confirmationUrl%
+
+            Regards,
+            The Payzeno Team.
+
+# Global strings
+layout:
+    logout: 'Mag-log out'
+    login: 'Mag-log in'
+    register: Register
+    logged_in_as: 'Naka-log in bilang %username%'
+
+form:
+    group_name: 'Pangalan ng grupo'
+    username: Username
+    email: Email
+    current_password: 'Kasalukuyang password'
+    password: Password
+    password_confirmation: 'Ulitin ang password'
+    new_password: 'Bagong password'
+    new_password_confirmation: 'Ulitin bagong password'
+    paypal: 'Paypal email'

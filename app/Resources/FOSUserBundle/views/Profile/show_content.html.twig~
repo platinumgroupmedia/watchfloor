@@ -1,0 +1,145 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+<form class="form-horizontal">
+<h3 style="margin:0;">Merchant Information</h3>
+<hr />
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Full Name:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Business Name:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.email }}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Address:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">City:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">State/Province:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Country:</label>
+        <div class="col-xs-9">
+			<select class="text-custom form-control" style="margin-left:12px;">
+		    <option value=""> Test 1</option>
+		    <option value=""> Test 2</option>
+		    </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Zip Code:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" style="width:100px;">
+        </div>
+    </div>
+
+
+
+    <br /><br />
+    <h3>Account</h3>
+    <hr />
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Username:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Contact Email:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Paypal Email:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <br /><br />
+    <h3>Paypal Web Payment Pro Setting</h3>
+    <hr />
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Payment Pro Status:</label>
+        <div class="col-xs-9">
+            <p style="margin-top:10px;"><strong>OFF</strong> <a href="" style="margin-left:30px;">Enable Paypal Pro</a></p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Payment Pro Username:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Payment Pro Password:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-3 text-right">Payment Pro Signature:</label>
+        <div class="col-xs-9">
+            <input type="text" class="text-custom form-control" value="{{ user.username }}">
+        </div>
+    </div>
+
+
+
+	<br /><br />
+    <div class="form-group">
+        <div class="text-center col-xs-12">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+    </div>
+</form>
+
+

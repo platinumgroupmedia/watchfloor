@@ -1,0 +1,52 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="col-md-6 form-left col-md-offset-3">
+	<div class="form-header"><h4>Edit Your Profile</h4></div>
+	{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit form-horizontal', 'role': 'form' } }) }}
+	    <div id="fos_user_profile_form">
+	    	
+	    	<div class="form-group">
+	    		{{ form_label(form.username, 'form.username'|trans, {'label_attr': {'class': 'col-sm-12 control-label'}}) }}
+
+					<div class="col-sm-12">
+	    			{{ form_widget(form.username, { 'attr': {'class': 'form-control' } }) }}
+	    			{{ form_errors(form.username) }}
+		    		</div>
+				</div>
+
+
+	    	<div class="form-group">
+	    		{{ form_label(form.email, 'form.email'|trans, {'label_attr': {'class': 'col-sm-12 control-label'}}) }}
+					<div class="col-sm-12">
+	    			{{ form_widget(form.email, { 'attr': {'class': 'form-control' } }) }}
+	    			{{ form_errors(form.email) }}
+	    			</div>
+	    	</div>
+
+	    	{# <div class="form-group">
+	    		{{ form_label(form.current_password, 'form.current_password'|trans, {'label_attr': {'class': 'col-sm-12 control-label'}}) }}
+	    			<div class="col-sm-12">
+	    			{{ form_widget(form.current_password, { 'attr': {'class': 'form-control' } }) }}
+	    			{{ form_errors(form.current_password) }}
+	    			</div>
+	    	</div> #}
+
+
+	    	<div class="form-group">
+	    		{{ form_label(form.paypal, 'form.paypal'|trans, {'label_attr': {'class': 'col-sm-12 control-label'}}) }}
+	    			<div class="col-sm-12">
+	    			{{ form_widget(form.paypal, { 'attr': {'class': 'form-control' } }) }}
+	    			{{ form_errors(form.paypal) }}
+			    	</div>
+		   	</div>
+		    {{ form_rest(form) }}
+	    </div>
+	    <div>
+	        <div class="text-center" style="margin-top:40px;">
+		        <button type="submit" class="btn btn-success">{{ 'profile.edit.submit'|trans }}</button>
+		    </div>
+	    </div>
+	{{ form_end(form) }}
+</div>
+
+<div class="clearfix"></div>

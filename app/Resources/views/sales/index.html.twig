@@ -1,0 +1,40 @@
+{% extends 'intermediate.html.twig' %}
+
+{% block body %}
+	{# Search: <input class="psearch" value="" type="text"> #}
+	<table id="tbluser" class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th{% if pagination.isSorted('u.infiniteUser') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Email Address', 'u.infiniteUser') }}</th>
+				<th{% if pagination.isSorted('u.fullname') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Full Name', 'u.fullname') }}</th>
+				<th{% if pagination.isSorted('s.address1') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Address', 's.address1') }}</th>
+				<th{% if pagination.isSorted('s.city') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'City', 's.city') }}</th>
+				<th{% if pagination.isSorted('s.state') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'State', 's.state') }}</th>
+				<th{% if pagination.isSorted('s.postal') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Zip/Postal', 's.postal') }}</th>
+				<th{% if pagination.isSorted('s.country') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Country', 's.country') }}</th>
+				<th{% if pagination.isSorted('s.phone') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Phone', 's.phone') }}</th>
+				<th{% if pagination.isSorted('u.created') %} scope="row" class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Date Purchased', 'u.created') }}</th>
+			</tr>
+		</thead>
+		<tbody data-provides="rowlink">
+			{% for user in pagination %}
+			<tr>
+				<td class="">{{ user[0].infiniteUser }}</td>
+				<td class="">{{ user[0].fullname|title }}</td>
+				<td class="">{{ user.address1|title }}</td>
+				<td class="">{{ user.city|title }}</td>
+				<td class="">{{ user.state }}</td>
+				<td class="">{{ user.postal }}</td>
+				<td class="">{{ user.country }}</td>
+				<td class="">{{ user.phone }}</td>
+				<td class="">{{ user[0].datePurchased|date("F d, Y, g:i a T", "America/Los_Angeles") }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<div>
+		<div class="results hidden-phone pull-left">{{ pagination.getTotalItemCount }} users in the past 7 days</div>
+		{{ knp_pagination_render(pagination) }}
+		<div class="clearfix"></div>
+	</div>
+{% endblock body %}

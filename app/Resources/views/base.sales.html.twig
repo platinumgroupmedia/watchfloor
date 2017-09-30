@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Watchfloor{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<meta name="title" content="User Admin">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="(c) 2013 Platinum Media Group Inc" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta name="google-site-verification" content="" />
+	
+	{% block stylesheets %}
+	<link type="text/css" href="{{ asset('css/style.css') }}" rel="stylesheet" media="screen" />
+	{% endblock stylesheets %}
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/scripts.js"></script>		   
+</head>
+<body>
+	{% block nav %}
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+				<a class="brand" href="/">Watchfloor Admin</a>
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li class="navbar-text hidden-large"><i class="icon-white icon-lock"></i>&nbsp;You are authenticated</li>
+						<li class="dropdown" id="store"><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+					</ul>
+				</div> 
+			</div>
+		</div>
+	</div>
+	{% endblock nav %}
+	{% block body %}
+	<div class="container-fluid">
+		{% block flash %}
+			{% if app.session.flashbag.peekAll|length > 0 %}
+				{% for type, messages in app.session.flashbag.all %}
+			    	{% for message in messages %}
+			        	<div class="alert alert-{{type}}" id="flash-message">
+							<button type="button" class="close" data-dismiss="alert">x</button>
+			            	{{ message|trans }}
+			            </div>
+			        {% endfor %}
+			    {% endfor %}
+			{% endif %}
+		{% endblock flash %}
+		<div class="box">
+			<div class="heading">
+				<h1><span class="category-icon"></span>Rich Janitor OTO Buyers</h1>
+				<div class="buttons">
+				{% if buttons|length > 0 %}
+					{% for button in buttons %}
+						{{ button }}
+					{% endfor %}
+				{% endif %}
+				</div>
+			</div><!--heading-->
+			<div class="content">
+			{% block content %}
+			
+			{% endblock content %}
+			</div><!--content-->
+		</div><!--box-->
+	</div><!--container-fluid-->
+	{% endblock body %}
+	<hr>
+	<div class="footer">
+		 &copy; <?php echo date("Y"); ?> All Rights Reserved.<br />Platinum Group Media Inc
+	</div><!--footer-->
+</body>
+</html>

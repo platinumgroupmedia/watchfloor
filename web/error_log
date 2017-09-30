@@ -1,0 +1,4 @@
+[19-Dec-2016 19:59:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$em' (T_VARIABLE) in /home/richjani/watchfloor/src/AppBundle/Controller/DefaultController.php on line 22
+[26-Feb-2017 00:48:57 UTC] PHP Fatal error:  Class 'Knp\Bundle\PaginatorBundle\KnpPaginatorBundle' not found in /home/richjani/dev.watchfloor/app/AppKernel.php on line 18
+[07-Apr-2017 23:42:37 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/richjani/dev.watchfloor/src/AppBundle/Controller/AdminController.php on line 49
+[08-Apr-2017 20:41:01 UTC] PHP Fatal error:  Call to a member function getLastId() on array in /home/richjani/dev.watchfloor/src/AppBundle/Controller/AdminController.php on line 74

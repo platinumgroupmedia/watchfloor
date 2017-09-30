@@ -1,0 +1,31 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+<div class="col-md-6 form-left col-md-offset-3">
+
+	<div class="form-header"><h4>Watchfloor password reset.</h4></div>
+
+	<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+
+	    <div class="form-group" style="margin:20px 20px 20px 0;">
+			<div class="clearfix"></div>
+
+	        {% if invalid_username is defined %}
+	            <p>{{ 'resetting.request.invalid_username'|trans({'%username%': invalid_username}) }}</p>
+	        {% endif %}
+
+	        <div class="col-md-8">
+	        <input type="text" id="username" name="username" class="form-control" required="required" placeholder="Enter username or email" />
+	        </div>
+
+
+	        <div class="col-md-4 text-center">
+	        <input type="submit" class="btn btn-primary" value="{{ 'resetting.request.submit'|trans }}" />
+			</div>
+
+			<div class="clearfix"></div>
+	    </div>
+
+	</form>
+
+</div>
