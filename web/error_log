@@ -46,3 +46,863 @@ Expect: 100-continue
 
 [30-Sep-2017 08:59:16 UTC] Completed in 6,121.94ms
 [30-Sep-2017 08:59:16 UTC] Got response: [{"email":"wade@goodfellaz.com","status":"sent","_id":"dd954609b0154a2f9c51547f1ada70e6","reject_reason":null}]
+[26-Oct-2017 15:00:22 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[26-Oct-2017 15:00:23 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Thu, 26 Oct 2017 15:00:23 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[26-Oct-2017 15:00:23 UTC] Completed in 1,530.62ms
+[26-Oct-2017 15:00:23 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"1f4c77c5d94b40af8ebbf318542cf849","reject_reason":null}]
+[29-Oct-2017 00:28:53 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[29-Oct-2017 00:28:53 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Sun, 29 Oct 2017 00:28:53 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[29-Oct-2017 00:28:53 UTC] Completed in 396.68ms
+[29-Oct-2017 00:28:53 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"232caad3ff534702a90595996913d759","reject_reason":null}]
+[06-Nov-2017 04:37:09 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[06-Nov-2017 04:37:09 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Mon, 06 Nov 2017 04:37:09 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[06-Nov-2017 04:37:09 UTC] Completed in 430.52ms
+[06-Nov-2017 04:37:09 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"91b0c488996049c7ad80f984cb3490ec","reject_reason":null}]
+[12-Nov-2017 16:10:35 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[12-Nov-2017 16:10:35 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 12 Nov 2017 16:10:35 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[12-Nov-2017 16:10:35 UTC] Completed in 421.97ms
+[12-Nov-2017 16:10:35 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"37a268a641a949f8ba83a0f90b333856","reject_reason":null}]
+[21-Nov-2017 16:05:45 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[21-Nov-2017 16:05:45 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Tue, 21 Nov 2017 16:05:45 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[21-Nov-2017 16:05:45 UTC] Completed in 536.34ms
+[21-Nov-2017 16:05:45 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"d3f94c3265e34ea085f621f4404227cb","reject_reason":null}]
+[03-Dec-2017 15:45:52 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[03-Dec-2017 15:45:53 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 03 Dec 2017 15:45:53 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[03-Dec-2017 15:45:53 UTC] Completed in 551.62ms
+[03-Dec-2017 15:45:53 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"6389b44c2f054e5586948b286b1c578d","reject_reason":null}]
+[11-Dec-2017 02:29:43 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[11-Dec-2017 02:29:44 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Mon, 11 Dec 2017 02:29:44 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[11-Dec-2017 02:29:44 UTC] Completed in 427.11ms
+[11-Dec-2017 02:29:44 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"2799708a061a48e49ad885952be736ea","reject_reason":null}]
+[17-Dec-2017 15:27:54 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[17-Dec-2017 15:27:55 UTC] *   Trying 52.35.209.90...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.209.90) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 17 Dec 2017 15:27:55 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[17-Dec-2017 15:27:55 UTC] Completed in 769.24ms
+[17-Dec-2017 15:27:55 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"efa11cea9dd1419d982440d8a5566933","reject_reason":null}]
+[03-Jan-2018 03:54:42 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[03-Jan-2018 03:54:42 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[03-Jan-2018 03:54:43 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Wed, 03 Jan 2018 03:54:43 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[03-Jan-2018 03:54:43 UTC] Completed in 703.42ms
+[03-Jan-2018 03:54:43 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"c0cbbf9b875a44a8b84f592cf147f38e","reject_reason":null}]
+[03-Jan-2018 03:54:43 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Wed, 03 Jan 2018 03:54:43 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[03-Jan-2018 03:54:43 UTC] Completed in 709.74ms
+[03-Jan-2018 03:54:43 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"966dbc6ee39e4f8b95055a77245d56eb","reject_reason":null}]
+[07-Jan-2018 16:21:02 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[07-Jan-2018 16:21:05 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 07 Jan 2018 16:21:05 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[07-Jan-2018 16:21:05 UTC] Completed in 2,968.61ms
+[07-Jan-2018 16:21:05 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"ca03bf336f164ef2a1824457a6c58ec6","reject_reason":null}]
+[07-Jan-2018 16:21:05 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[07-Jan-2018 16:21:06 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 07 Jan 2018 16:21:06 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[07-Jan-2018 16:21:06 UTC] Completed in 427.84ms
+[07-Jan-2018 16:21:06 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"c16b98e3ad7e45b4be6485ded4f7c110","reject_reason":null}]
+[12-Jan-2018 20:56:48 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[12-Jan-2018 20:56:48 UTC] *   Trying 52.35.209.90...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.209.90) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Fri, 12 Jan 2018 20:56:48 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[12-Jan-2018 20:56:48 UTC] Completed in 638.26ms
+[12-Jan-2018 20:56:48 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"7c33f4b03a7545779718f876acf37e7a","reject_reason":null}]
+[25-Jan-2018 16:34:48 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[25-Jan-2018 16:34:48 UTC] *   Trying 52.35.209.90...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.209.90) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Thu, 25 Jan 2018 16:34:48 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[25-Jan-2018 16:34:48 UTC] Completed in 455.54ms
+[25-Jan-2018 16:34:48 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"2acda753c3b3407fa564fcdf3daaad12","reject_reason":null}]
+[07-Feb-2018 23:13:08 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[07-Feb-2018 23:13:09 UTC] *   Trying 52.35.107.200...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.35.107.200) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Dec  5 00:00:00 2016 GMT
+*  expire date: Dec 16 23:59:59 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=thawte, Inc.; CN=thawte SSL CA - G2
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Wed, 07 Feb 2018 23:13:09 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[07-Feb-2018 23:13:09 UTC] Completed in 868.08ms
+[07-Feb-2018 23:13:09 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"bf85160d905f4e359594ec8e88efc575","reject_reason":null}]
+[11-Mar-2018 04:48:21 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[11-Mar-2018 04:48:22 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[11-Mar-2018 04:48:22 UTC] *   Trying 54.245.105.146...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (54.245.105.146) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Jan 12 00:00:00 2018 GMT
+*  expire date: Dec 16 12:00:00 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Sun, 11 Mar 2018 04:48:22 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[11-Mar-2018 04:48:22 UTC] Completed in 488.14ms
+[11-Mar-2018 04:48:22 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"18c8d9fe869648cea8876daa134c40f5","reject_reason":null}]
+[11-Mar-2018 04:48:23 UTC] *   Trying 54.245.105.146...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (54.245.105.146) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Jan 12 00:00:00 2018 GMT
+*  expire date: Dec 16 12:00:00 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Sun, 11 Mar 2018 04:48:23 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[11-Mar-2018 04:48:23 UTC] Completed in 2,040.97ms
+[11-Mar-2018 04:48:23 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"bd79dc2dd92749e1a8eb79e668c7d080","reject_reason":null}]
+[24-Mar-2018 04:02:52 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[24-Mar-2018 04:02:53 UTC] *   Trying 54.245.105.146...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (54.245.105.146) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Jan 12 00:00:00 2018 GMT
+*  expire date: Dec 16 12:00:00 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sat, 24 Mar 2018 04:02:53 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[24-Mar-2018 04:02:53 UTC] Completed in 433.33ms
+[24-Mar-2018 04:02:53 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"1f411862b5b645be8099fc0fd8d5a348","reject_reason":null}]
+[08-Apr-2018 15:20:12 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[08-Apr-2018 15:20:12 UTC] *   Trying 54.245.105.162...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (54.245.105.162) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Jan 12 00:00:00 2018 GMT
+*  expire date: Dec 16 12:00:00 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.0
+< Date: Sun, 08 Apr 2018 15:20:12 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[08-Apr-2018 15:20:12 UTC] Completed in 601.12ms
+[08-Apr-2018 15:20:12 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"5f92fd3d2a904afcad68317ea73bc65d","reject_reason":null}]
+[04-May-2018 04:04:51 UTC] Call to https://mandrillapp.com/api/1.0/messages/send.json: {"message":{"html":"<html>\n\t<head><\/head>\n\t<body>\n\t\tThis email is to notify you that the RichJanitor Watchfloor admin has counted at least 200 new users since your last invoice.\n\t\tPlease go to <a href=\"http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices\">http:\/\/dev.watchfloor.richjanitor.com\/admin\/invoices<\/a> to see the newest invoice.<br\/>\n\t\t\n\t\tThanks<br\/><br\/>\n\t\tRich Janitor Support\n\t<\/body>\n<\/html>","text":null,"subject":"New Notification From Rich Janitor","to":[{"email":"support@successmarketinginstitute.com","name":"","type":"to"}],"from_email":"richjani@secretoffer.org","from_name":"Rich Janitor Notifications","headers":[],"track_opens":null,"track_clicks":null,"auto_text":null,"auto_html":null,"url_strip_qs":null,"inline_css":null,"preserve_recipients":null,"view_content_link":null,"bcc_address":null,"merge":false,"merge_language":"mailchimp","important":false,"global_merge_vars":[],"merge_vars":[],"tags":[],"subaccount":null,"google_analytics_domains":[],"google_analytics_campaign":"","metadata":[],"recipient_metadata":[],"attachments":[],"images":[],"tracking_domain":null,"signing_domain":null,"return_path_domain":null},"async":false,"ip_pool":null,"send_at":null,"key":"7UrhK4zatIkYmXNxMknriA"}
+[04-May-2018 04:04:51 UTC] *   Trying 52.36.64.127...
+* TCP_NODELAY set
+* Connected to mandrillapp.com (52.36.64.127) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+  CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=Georgia; L=Atlanta; O=The Rocket Science Group, LLC; OU=Product Dev; CN=mandrillapp.com
+*  start date: Jan 12 00:00:00 2018 GMT
+*  expire date: Dec 16 12:00:00 2019 GMT
+*  subjectAltName: host "mandrillapp.com" matched cert's "mandrillapp.com"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+> POST /api/1.0/messages/send.json HTTP/1.1
+Host: mandrillapp.com
+User-Agent: Mandrill-PHP/1.0.55
+Accept: */*
+Content-Type: application/json
+Content-Length: 1264
+Expect: 100-continue
+
+< HTTP/1.1 100 Continue
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+< Server: nginx/1.8.1
+< Date: Fri, 04 May 2018 04:04:51 GMT
+< Content-Type: application/json; charset=utf-8
+< Transfer-Encoding: chunked
+< Vary: Accept-Encoding
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: POST, GET, OPTIONS
+< Access-Control-Allow-Headers: Content-Type
+< Access-Control-Allow-Credentials: false
+< 
+* Connection #0 to host mandrillapp.com left intact
+
+[04-May-2018 04:04:51 UTC] Completed in 535.93ms
+[04-May-2018 04:04:51 UTC] Got response: [{"email":"support@successmarketinginstitute.com","status":"sent","_id":"b5d3a89c890949178865069e3d90bb1f","reject_reason":null}]

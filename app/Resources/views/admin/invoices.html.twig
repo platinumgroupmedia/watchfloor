@@ -31,8 +31,11 @@
 						
 						<td><div class="">{{ invoice.created|date("Y-m-d") }}</div></td> 
 
-						<td><div class=""><a href="{{ path('admin_view_invoice', {"id" : invoice.id}) }}">View</a></div></td>
-
+						<td>
+							<div class="">
+								<a href="{{ path('admin_view_invoice', {"id" : invoice.id}) }}">View</a>
+								{% if user.username == 'platinum' %} | <a href="{{ path('admin_view_invoice_with_stats', {"id" : invoice.id}) }}">View with Stats</a>{% endif %}
+							</div></td>
 					</tr>
 
 				{% endfor %}
